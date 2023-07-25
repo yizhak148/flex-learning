@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.topbar {
+  background-color: #14a575;
+  height: 10%;
+}
+
+.main {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+}
+
+.side-nav {
+  background-color: burlywood;
+  width: 15%;
+}
+
+.main-content {
+  background-color: darkgrey;
+  width: 85%;
+}
