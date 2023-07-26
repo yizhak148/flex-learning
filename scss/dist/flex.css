@@ -28,7 +28,7 @@ html, body {
 .main {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 50%;
+  flex-basis: 0;
   background-color: red;
 }
 
