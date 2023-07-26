@@ -23,6 +23,21 @@ html, body {
   flex-shrink: 0;
   flex-basis: 4rem;
   background-color: #14a575;
+  max-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar input {
+  width: 500px;
+  height: 2rem;
+  border-radius: 12px;
+}
+.topbar button {
+  border-radius: 12px;
+  height: 3rem;
+  margin-right: 10px;
 }
 
 .main {
@@ -30,12 +45,17 @@ html, body {
   flex-shrink: 0;
   flex-basis: 0;
   background-color: red;
+  display: flex;
+  flex-direction: row;
 }
 
 .side-nav {
+  flex-basis: 5rem;
+  flex-shrink: 0;
   background-color: burlywood;
 }
 
 .main-content {
+  flex-grow: 1;
   background-color: darkgrey;
 }
