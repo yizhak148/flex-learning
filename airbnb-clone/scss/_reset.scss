@@ -1,0 +1,23 @@
+// @use "fonts" as fonts;
+
+@font-face {
+    font-family: "cereal";
+    src: url("../assets/fonts/cereal.woff2") format('woff2');
+}
+$font-main: 'cereal', 'Arial', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+} 
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}

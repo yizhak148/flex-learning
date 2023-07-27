@@ -1,13 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
+@use "reset";
+@use "main-content";
 
 .wrapper {
     height: 100%;
@@ -18,67 +10,17 @@ html, body {
 }
 
  .topbar {
+    // flex-child
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 5rem;
+
     background-color: aqua;
-    flex-wrap: nowrap;
 }
 
-
-.property-list {
-
-    // centers element
-    width: 95%;
-    margin-inline: auto;
+.main-content {
 
     // flex-child 
     flex-grow: 1;
-    flex-shrink: 1;
-    
-    // flex-dad
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2rem;
-
-    list-style: none;
-
-    // last placeholders
-    &> *.placeholder {
-        height: 0px;
-        visibility: hidden;
-    }
-}
-
-.property {
-    
-    height: 25rem;
-
-    // flex-child
-    flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 15rem;
-
-    // self properties
-    background-color: rgba(black, 0.1);
-    border-radius: 1rem;
-    padding: 1rem;
-
-    &__img {
-        background-color: grey;
-    }
-
-    &__location {
-        background-color: red;
-    }
-
-    &__date {
-        background-color: blue;
-
-    }
-    &__price {
-        background-color: purple;
-    }
 }

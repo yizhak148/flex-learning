@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "cereal";
+  src: url("../assets/fonts/cereal.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "cereal", "Arial", sans-serif;
 }
 
 html, body {
@@ -9,27 +14,54 @@ html, body {
   width: 100%;
 }
 
-.wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+li {
+  list-style: none;
 }
 
-.topbar {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 5rem;
-  background-color: aqua;
-  flex-wrap: nowrap;
-}
-
-.property-list {
+.main-content {
   width: 95%;
   margin-inline: auto;
+}
+
+.catbar {
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.catbar__filter-button {
+  flex-basis: 6rem;
+}
+.catbar__list {
+  background-color: bisque;
+  height: 6rem;
   flex-grow: 1;
-  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  overflow-y: auto;
+}
+.catbar__item {
+  background-color: red;
+  flex-shrink: 0;
+  flex-basis: 5rem;
+  text-align: center;
+}
+.catbar__img {
+  width: 3rem;
+  height: 3rem;
+}
+.catbar__name {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.properties-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,7 +69,7 @@ html, body {
   gap: 2rem;
   list-style: none;
 }
-.property-list > *.placeholder {
+.properties-list > *.placeholder {
   height: 0px;
   visibility: hidden;
 }
@@ -63,3 +95,23 @@ html, body {
 .property__price {
   background-color: purple;
 }
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.topbar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 5rem;
+  background-color: aqua;
+}
+
+.main-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+}/*# sourceMappingURL=main.css.map */
