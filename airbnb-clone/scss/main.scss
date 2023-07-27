@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 } 
+
 html, body {
     height: 100%;
     width: 100%;
@@ -25,10 +26,9 @@ html, body {
 }
 
 
-.main-content {
-    background-color: rgb(102, 65, 65);
+.property-list {
 
-    // centers parent
+    // centers element
     width: 95%;
     margin-inline: auto;
 
@@ -43,19 +43,42 @@ html, body {
     justify-content: flex-start;
     gap: 2rem;
 
-}
+    list-style: none;
 
-.main-content__card {
-    
-    flex-basis: 20rem;
-    height: 15rem;
-    flex-grow: 1;
-    flex-shrink: 0;
-    background-color: blue;
-
-    &.placeholder {
-        background-color: green;
+    // last placeholders
+    &> *.placeholder {
+        height: 0px;
+        visibility: hidden;
     }
 }
 
+.property {
+    
+    height: 25rem;
 
+    // flex-child
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 15rem;
+
+    // self properties
+    background-color: rgba(black, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    &__img {
+        background-color: grey;
+    }
+
+    &__location {
+        background-color: red;
+    }
+
+    &__date {
+        background-color: blue;
+
+    }
+    &__price {
+        background-color: purple;
+    }
+}
