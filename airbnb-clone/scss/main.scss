@@ -15,6 +15,7 @@ html, body {
     flex-direction: column;
     flex-wrap: nowrap;
 }
+
  .topbar {
     flex-grow: 0;
     flex-shrink: 0;
@@ -22,26 +23,39 @@ html, body {
     background-color: aqua;
     flex-wrap: nowrap;
 }
+
+
 .main-content {
-    width: 90%;
+    background-color: rgb(102, 65, 65);
+
+    // centers parent
+    width: 95%;
+    margin-inline: auto;
+
+    // flex-child 
     flex-grow: 1;
     flex-shrink: 0;
-    background-color: rgb(102, 65, 65);
+    
+    // flex-dad
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-inline: auto;
     gap: 2rem;
+
 }
 
 .main-content__card {
-    flex-grow: 1;
-    max-width: 25%;
-    min-width: 17rem;
-    flex-shrink: 0;
-    height: 15rem;
-    background-color: blue;
     
+    flex-basis: 20rem;
+    height: 15rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: blue;
 
+    &.placeholder {
+        background-color: green;
+    }
 }
+
+
