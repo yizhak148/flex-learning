@@ -107,7 +107,7 @@ li {
   text-decoration: none;
   color: black;
 }
-.searchbar__option:nth-last-child(2) {
+.searchbar__option:nth-last-child(3) {
   color: rgba(0, 0, 0, 0.5);
 }
 .searchbar__option + .searchbar__option::before {
