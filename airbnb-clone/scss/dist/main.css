@@ -108,11 +108,11 @@ li {
   color: black;
 }
 .searchbar__option:nth-last-child(3) {
-  color: rgba(0, 0, 0, 0.5);
+  color: #717171;
 }
 .searchbar__option + .searchbar__option::before {
   content: "|";
-  color: rgba(0, 0, 0, 0.5);
+  color: #717171;
   margin-right: 0.5rem;
 }
 .searchbar__search {
@@ -161,7 +161,7 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: white;
 }
