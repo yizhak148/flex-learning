@@ -1,16 +1,11 @@
-// @use "fonts" as fonts;
-
-@font-face {
-    font-family: "cereal";
-    src: url("../assets/fonts/cereal.woff2") format('woff2');
-}
-$font-main: 'cereal', 'Arial', sans-serif;
+@use "defaults/fonts" as fonts;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: $font-main;
+    font-family: fonts.$font-main;
+    -webkit-font-smoothing: antialiased;
 } 
 
 html, body {
@@ -21,3 +16,5 @@ html, body {
 li{
     list-style: none;
 }
+
+
