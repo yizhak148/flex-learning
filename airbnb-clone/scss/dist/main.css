@@ -64,7 +64,10 @@ li {
   justify-content: flex-start;
   align-items: baseline;
   gap: 2rem;
-  overflow: hidden;
+  overflow-y: auto;
+}
+.catbar__list::-webkit-scrollbar {
+  display: none;
 }
 .catbar__item {
   flex-shrink: 0;

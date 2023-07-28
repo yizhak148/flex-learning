@@ -59,8 +59,12 @@
         justify-content: flex-start;
         align-items: baseline;
         gap: 2rem;
-        overflow: hidden;
+        overflow-y: auto;
 
+        // Hide scrollbar 
+        &::-webkit-scrollbar { 
+            display: none;  
+        }
     }
 
     &__item {
