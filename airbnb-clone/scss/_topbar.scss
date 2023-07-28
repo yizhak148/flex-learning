@@ -1,0 +1,115 @@
+@use "defaults/colors" as colors;
+@use "defaults/screens" as screens;
+
+.topbar {
+    &__seperator {
+        border-bottom: solid 1px rgba(black, 0.1);
+    }
+}
+
+.navbar {
+    // dimensions
+    width: 95%;
+    height: 4rem;
+    margin-inline: auto;
+
+    // flex-parent
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.main-logo {
+
+    // flex-child
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    &__svg {
+        display: block;
+        width: 8rem;
+        height: 2rem;
+        color: colors.$brand-color;
+    }
+
+    @media (max-width: screens.$screen-small) {
+        &__svg {
+            width: 2rem;
+        }
+        &__title {
+            display: none;    
+        }
+    }
+}
+
+.searchbar {
+    // flex-child 
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20rem;
+    margin: auto;
+    // dimensions
+    height: 3rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    // flex-parent
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    // styling
+    border-radius: 4rem;
+    text-align: center;
+
+    // border 
+    border: solid 1px rgba( black, 0.1);
+    box-shadow: 0px 2px 6px rgba( black, 0.1 );
+
+    &__option {
+
+        // text style
+        font-size: 0.9rem;
+        font-weight: normal;
+        text-decoration: none;
+        color: black;
+
+        // text seperators
+        &:nth-last-child(2) {
+            color:  rgba( black, 0.5 );
+        }
+
+        & + &::before    {
+            content: "|";
+            color:  rgba( black, 0.5 );
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__search {
+        // button dimensions
+        width: 2rem;
+        height: 2rem;
+        
+        // styling
+        background: url("../../assets/icons/search.svg") no-repeat center center /45%;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        background-color: colors.$brand-color;
+    }
+
+}
+
+.profilebar {
+    background-color: slategrey;
+
+
+}

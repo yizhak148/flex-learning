@@ -7,6 +7,11 @@
   font-weight: bold;
   src: url("../../assets/fonts/cereal-bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "cereal";
+  font-weight: lighter;
+  src: url("../../assets/fonts/cereal-light.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +27,88 @@ html, body {
 
 li {
   list-style: none;
+}
+
+.topbar__seperator {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  width: 95%;
+  height: 4rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.main-logo__svg {
+  display: block;
+  width: 8rem;
+  height: 2rem;
+  color: #ff385c;
+}
+@media (max-width: 1200px) {
+  .main-logo__svg {
+    width: 2rem;
+  }
+  .main-logo__title {
+    display: none;
+  }
+}
+
+.searchbar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20rem;
+  margin: auto;
+  height: 3rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4rem;
+  text-align: center;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.searchbar__option {
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+.searchbar__option:nth-last-child(2) {
+  color: rgba(0, 0, 0, 0.5);
+}
+.searchbar__option + .searchbar__option::before {
+  content: "|";
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.5rem;
+}
+.searchbar__search {
+  width: 2rem;
+  height: 2rem;
+  background: url("../../assets/icons/search.svg") no-repeat center center/45%;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ff385c;
+}
+
+.profilebar {
+  background-color: slategrey;
 }
 
 .catbar {
@@ -109,7 +196,7 @@ li {
   flex-basis: 2.2rem;
   height: 2.1rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .catbar {
     width: 100%;
     padding: 0 2rem;

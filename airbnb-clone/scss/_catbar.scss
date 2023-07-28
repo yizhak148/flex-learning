@@ -1,10 +1,11 @@
+@use "defaults/screens" as screens;
+@use "defaults/fonts" as fonts;
+
 .catbar {
-    // background-color: pink;
 
     width: 95%;
     margin-inline: auto;
     height: 4rem;
-    // margin-bottom: 1rem;
     
     // flex-parent
     display: flex;
@@ -18,7 +19,6 @@
     font-size: 0.7rem;
     white-space: nowrap;
     font-weight: 600;
-    // letter-spacing: .01rem;
 
     &__filter-button {
 
@@ -48,7 +48,6 @@
     }
 
     &__list {
-        // background-color: bisque;
 
         // flex-child
         flex-grow: 1;
@@ -68,7 +67,6 @@
     }
 
     &__item {
-        // background-color: red;
 
         // flex-child
         flex-shrink: 0;
@@ -129,8 +127,7 @@
         }
     }
 
-
-    @media (max-width: 700px) {
+    @media (max-width: screens.$screen-small) {
         width: 100%;
         
         padding: 0 2rem;
