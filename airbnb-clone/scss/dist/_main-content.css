@@ -1,0 +1,39 @@
+.main-content {
+  width: 95%;
+  margin-inline: auto;
+}
+
+.properties-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style: none;
+}
+.properties-list > *.placeholder {
+  height: 0px;
+  visibility: hidden;
+}
+
+.property {
+  height: 25rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 15rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.property__img {
+  background-color: grey;
+}
+.property__location {
+  background-color: red;
+}
+.property__date {
+  background-color: blue;
+}
+.property__price {
+  background-color: purple;
+}

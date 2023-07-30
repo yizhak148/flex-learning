@@ -357,6 +357,7 @@ li {
 }
 .property__img {
   background-color: grey;
+  width: 7rem;
 }
 .property__location {
   background-color: red;
@@ -386,4 +387,4 @@ li {
 .main-content {
   flex-grow: 1;
   flex-shrink: 0;
-}/*# sourceMappingURL=main.css.map */
+}
