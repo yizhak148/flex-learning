@@ -27,15 +27,10 @@
 }
 .property__img {
   background-color: grey;
-  width: 9rem;
-  height: 16rem;
+  width: 19rem;
+  height: 18rem;
+  border-radius: 12px;
 }
-.property__location {
-  background-color: red;
-}
-.property__date {
-  background-color: blue;
-}
-.property__price {
-  background-color: purple;
+.property__img:hover {
+  cursor: pointer;
 }

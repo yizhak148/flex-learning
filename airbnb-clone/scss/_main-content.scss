@@ -40,20 +40,24 @@
 
     &__img {
         background-color: grey;
-        width: 9rem;
-        height: 16rem;
+        width: 19rem;
+        height: 18rem;
+        border-radius: 12px;
+        &:hover{
+            cursor: pointer;
+        }
         
     }
 
     &__location {
-        background-color: red;
+        //background-color: red;
     }
 
     &__date {
-        background-color: blue;
+        //background-color: blue;
 
     }
     &__price {
-        background-color: purple;
+        //background-color: purple;
     }
 }

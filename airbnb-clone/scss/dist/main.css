@@ -357,19 +357,13 @@ li {
 }
 .property__img {
   background-color: grey;
-  width: 6rem;
-  height: 12rem;
+  width: 19rem;
+  height: 18rem;
+  border-radius: 12px;
 }
-.property__location {
-  background-color: red;
+.property__img:hover {
+  cursor: pointer;
 }
-.property__date {
-  background-color: blue;
-}
-.property__price {
-  background-color: purple;
-}
-
 .wrapper {
   height: 100%;
   width: 100%;
