@@ -12,7 +12,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 2rem;
 
     list-style: none;
 
@@ -26,6 +26,7 @@
 .property {
     
     height: 25rem;
+    width: 19rem;
 
     // flex-child
     flex-grow: 1;
@@ -36,14 +37,15 @@
     //background-color: rgba(black, 0.1);
     border-radius: 1rem;
     //padding: 1rem;
-    &:hover{
-            cursor: pointer;
-        }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
     &__img {
+        flex-basis: 75%;
+        flex-grow: 1;
+        flex-shrink: 0;
         background-color: grey;
-        width: 19rem;
-        height: 19rem;
         border-radius: 12px;
         font-size: 15px;
         line-height: 19px;
@@ -51,15 +53,16 @@
     }
 
     &__location {
-        //background-color: red;
+        background-color: red;
     }
 
     &__date {
-        //background-color: blue;
+        background-color: blue;
 
     }
 
     &__price {
-        //background-color: purple;
+        background-color: purple;
     }
+
 }

@@ -338,7 +338,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 2rem;
   list-style: none;
 }
 .properties-list > *.placeholder {
@@ -348,22 +348,34 @@ li {
 
 .property {
   height: 25rem;
+  width: 19rem;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 15rem;
   border-radius: 1rem;
-}
-.property:hover {
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .property__img {
+  flex-basis: 75%;
+  flex-grow: 1;
+  flex-shrink: 0;
   background-color: grey;
-  width: 19rem;
-  height: 19rem;
   border-radius: 12px;
   font-size: 15px;
   line-height: 19px;
 }
+.property__location {
+  background-color: red;
+}
+.property__date {
+  background-color: blue;
+}
+.property__price {
+  background-color: purple;
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
