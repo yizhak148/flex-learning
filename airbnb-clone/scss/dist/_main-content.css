@@ -27,6 +27,8 @@
 }
 .property__img {
   background-color: grey;
+  width: 9rem;
+  height: 16rem;
 }
 .property__location {
   background-color: red;
