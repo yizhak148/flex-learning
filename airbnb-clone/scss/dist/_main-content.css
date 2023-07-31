@@ -11,6 +11,7 @@
   gap: 2rem;
   list-style: none;
 }
+
 .properties-list > *.placeholder {
   height: 0px;
   visibility: hidden;
@@ -18,23 +19,25 @@
 
 .property {
   height: 25rem;
-  width: 19rem;
+  /* width: 19rem; */
+
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 15rem;
   border-radius: 1rem;
+
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 .property__img {
-  flex-basis: 75%;
+  /* flex-basis: 75%; */
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   background-color: grey;
   border-radius: 12px;
   font-size: 15px;
-  line-height: 19px;
+  /* line-height: 19px; */
 }
 .property__location {
   background-color: red;

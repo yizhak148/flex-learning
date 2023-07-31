@@ -1,3 +1,4 @@
+@use "defaults/fonts" as fonts;
 
 .main-content {
     // centers element
@@ -5,64 +6,73 @@
     margin-inline: auto;
 }
 
-.properties-list {
+.properties {
 
-    // flex-dad
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2rem;
+    width: 100%;
 
-    list-style: none;
+    &__list {
+        width: 100%;
 
-    // last placeholders
-    &> *.placeholder {
-        height: 0px;
-        visibility: hidden;
+        // flex-parent
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2rem;
+    
+        list-style: none;
+    
+        // last placeholders
+        &> *.placeholder {
+            height: 5px;
+            visibility: hidden;
+        }
     }
 }
 
-.property {
-    
-    height: 25rem;
-    width: 19rem;
 
+.property {
     // flex-child
     flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 15rem;
-
-    // self properties
-    //background-color: rgba(black, 0.1);
-    border-radius: 1rem;
-    //padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-basis: 16rem;
 
     &__img {
-        flex-basis: 75%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        background-color: grey;
-        border-radius: 12px;
-        font-size: 15px;
-        line-height: 19px;
+        aspect-ratio: 1/1;
+        width: 100%;
         
+        border-radius: 0.5rem;
     }
 
+    &__details {
+
+        padding: 0.5rem 0;
+
+        // font styling
+        font-family: fonts.$font-light;
+        color: black;
+        line-height: 1.5rem;
+
+    }
+    
     &__location {
-        background-color: red;
+        font-size: 1rem;
+    }
+
+    &__description {
+        color: rgba(black,0.5);
     }
 
     &__date {
-        background-color: blue;
-
+        color: rgba(black,0.5);
     }
 
     &__price {
-        background-color: purple;
+        font-size: 1rem;
+
+        &--value {
+        font-family: fonts.$font-main;
+        }
     }
 
 }

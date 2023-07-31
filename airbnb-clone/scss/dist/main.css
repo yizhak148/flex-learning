@@ -8,7 +8,7 @@
   src: url("../../assets/fonts/cereal-bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "cereal";
+  font-family: "cereal-light";
   font-weight: lighter;
   src: url("../../assets/fonts/cereal-light.woff2") format("woff2");
 }
@@ -16,13 +16,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "cereal", "Arial", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 html, body {
   height: 100%;
   width: 100%;
+  font-family: "cereal", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 li {
@@ -333,7 +333,11 @@ li {
   margin-inline: auto;
 }
 
-.properties-list {
+.properties {
+  width: 100%;
+}
+.properties__list {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -341,43 +345,44 @@ li {
   gap: 2rem;
   list-style: none;
 }
-.properties-list > *.placeholder {
-  height: 0px;
+.properties__list > *.placeholder {
+  height: 5px;
   visibility: hidden;
 }
 
 .property {
-  height: 25rem;
-  width: 19rem;
   flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 15rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-shrink: 1;
+  flex-basis: 16rem;
 }
 .property__img {
-  flex-basis: 75%;
-  flex-grow: 1;
-  flex-shrink: 0;
-  background-color: grey;
-  border-radius: 12px;
-  font-size: 15px;
-  line-height: 19px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.property__details {
+  padding: 0.5rem 0;
+  font-family: "cereal-light", "Arial", sans-serif;
+  color: black;
+  line-height: 1.5rem;
 }
 .property__location {
-  background-color: red;
+  font-size: 1rem;
+}
+.property__description {
+  color: rgba(0, 0, 0, 0.5);
 }
 .property__date {
-  background-color: blue;
+  color: rgba(0, 0, 0, 0.5);
 }
 .property__price {
-  background-color: purple;
+  font-size: 1rem;
+}
+.property__price--value {
+  font-family: "cereal", "Arial", sans-serif;
 }
 
 .wrapper {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -394,4 +399,4 @@ li {
 .main-content {
   flex-grow: 1;
   flex-shrink: 0;
-}
+}/*# sourceMappingURL=main.css.map */
